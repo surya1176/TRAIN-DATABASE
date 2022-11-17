@@ -1,3 +1,5 @@
 # TRAIN-DATABASE 
 
-INSTALL THE FINAL.ZIP FILE 
+. Download the zip file and open the files in vs code.
+. Open the sql file in workbench and run use database nodejs to connect with the backend.
+. type nodemon login.js in the vscode terminal to run the website.
