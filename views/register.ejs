@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <style> 
+    strong{
+        color: red ;
+    }
+  
+    </style>
+</head>
+<body>
+    <section class="box">
+        <div class="design"> 
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="form"> 
+            <h2>Register</h2>
+            <form action="/re" method="post"> 
+                <input type="text" name="name" class="input-field" required placeholder="enter your name" />
+                <input type="email" name="email" class="input-field" required placeholder="enter your email" />
+                <input type="password" name="password" class="input-field" placeholder="Password"/> 
+                <input type="password" name="cpassword" class="input-field" placeholder="confirm your password"/>
+                <%   if(typeof message != "undefined" && message) { %>
+
+                    <div class="mt-5 mb-3">
+            
+                      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            
+                        <strong><%=  message  %></strong>
+            
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            
+                      </div>
+            
+                    </div> 
+            
+                  <% }    %>
+                <input type="submit"  class="btn btn-danger" value="REGISTER"> 
+                 <a href="/auth/google" ><span class="fa fa-google"></span> SignIn with Google</a>
+            </form>
+           <p class = "reg">already have an account? <a href="index.html">Login now</a> </p>
+         
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,60 @@
+.screen-bus__time-wrap {
+    font-size: 0.7rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .screen-bus__time {
+    display: flex;
+    margin-bottom: 0.3rem;
+  }
+  .screen-bus__time-arrow-wrap {
+    margin: 0 0.7rem;
+  }
+  .screen-bus__time-arrow {
+    display: inline-block;
+    width: 15px;
+    height: 1px;
+    background-color: red;
+    position: relative;
+  }
+  .screen-bus__time-arrow:after,
+  .screen-bus__time-arrow:before {
+    content: "";
+    width: 5px;
+    height: 1px;
+    background-color: red;
+    position: absolute;
+    right: 0;
+  }
+  .screen-bus__time-arrow:after {
+    transform: rotate(-45deg);
+    top: 2px;
+  }
+  .screen-bus__time-arrow:before {
+    transform: rotate(45deg);
+    top: -2px;
+  }
+  .screen-bus__rating-price-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .screen-bus__rating-price {
+    margin-top: 0.5rem;
+  }
+  .screen-bus__rating-row {
+    display: flex;
+  }
+  .screen-bus__rating-row li {
+    margin-right: 5px;
+  }
+  .screen-bus__rating-row li:last-child {
+    margin-right: 0;
+  }
+  .screen-home__inside-wave {
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    border-radius: 100px;
+    background-color: #ffffff7d;
+    cursor: pointer;
+  }

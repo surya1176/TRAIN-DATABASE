@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100%;
+  /* margin-right: 800px;
+  margin-left: 80px; */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  opacity: 0.8;
+}
+
+html,
+body {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+body {
+  font: 16px 'Roboto', sans-serif;
+  width: 100%;
+  text-align: center;
+  color: #555;
+  background: linear-gradient(-45deg,#7f379b,#ffa26c);
+}
+
+.form {
+  padding: 35px 0;
+  border: 1px solid #aaa;
+  background: #eee;
+  min-width: 100%;
+  margin: 0 auto;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  
+}
+
+input[type=text] {
+  width: 80%;
+  padding: 10px 10px 12px 70px;
+  font-size: 12px;
+  color: #555;
+  border: 1px solid #aaa;
+  background-color: #fff;
+}
+
+.field {
+  display: inline-block;
+  position: relative;
+  margin: 10px auto;
+}
+
+.col-centered {
+  float: none;
+}
+
+.field input {
+  transition: .1s all linear;
+  font-size: 20px;
+  font-family: Monospace;
+}
+
+.field label {
+  color: #999;
+  font-size: 14px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 18%;
+  top: 18px;
+}
+.btn{ 
+  margin-left: 150px;
+}
+h1 {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 2em;
+  padding: 10px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  color: #131313;
+  background-color: #e7e5e4;
+  letter-spacing: .07em;
+  text-shadow: 1px -1px 0 #767676;
+  margin-top: 10px;
+}
+
+caption {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 25px;
+  padding: 20px 5px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #e0dfdc;
+  background-color: #333;
+  letter-spacing: .2em;
+  text-shadow: 1px -1px 0 #767676;
+  margin-top: 10px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: #644bff;
+  padding: 0 20px;
+}
+
+::selection{
+  color: #fff;
+  background: #664AFF;
+}
+.page1{ 
+  margin-left : 100px;
+}
+
+.wrapper{
+  max-width: 450px;
+  margin: 150px auto;
+}
+
+.wrapper .search-input{
+  background: #fff;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+}
+
+.search-input input{
+  height: 55px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+
+.search-input.active input{
+  border-radius: 5px 5px 0 0;
+}
+
+.search-input .autocom-box{
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.search-input.active .autocom-box{
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.autocom-box li{
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+}
+
+.search-input.active .autocom-box li{
+  display: block;
+}
+.autocom-box li:hover{
+  background: #efefef;
+}
+
+.search-input .icon{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 20px;
+  color: #644bff;
+  cursor: pointer;
+}
+body{ 
+  background: #D3CCE3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+
+
+

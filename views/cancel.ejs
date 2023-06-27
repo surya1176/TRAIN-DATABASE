@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+ <title>Table layout</title>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+ <link rel="stylesheet" href="assets\main.css">
+<style>
+    h1{ 
+      text-align: center;
+      color: red;
+    }
+    .filter{
+ position: absolute;
+ left: 0;
+ top: 0;
+ bottom: 0;
+ right: 0;
+ z-index: 1;
+background: rgb(233,76,161);
+background: -moz-linear-gradient(90deg, rgba(233,76,161,1) 0%, rgba(199,74,233,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(233,76,161,1) 0%, rgba(199,74,233,1) 100%);
+background: linear-gradient(90deg, rgba(233,76,161,1) 0%, rgba(199,74,233,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e94ca1",endColorstr="#c74ae9",GradientType=1); 
+opacity: .7;
+}
+   
+</style>
+</head>
+
+<body>
+
+
+  <div class="filter">
+  
+ </div>
+ <h1>YOUR TICKET STATUS</h1>
+ <%   if(typeof message != "undefined" && message) { %>
+ <table >
+
+  
+
+    
+ <tr>
+
+ <th>Ticket-id</th>
+
+<th>Number of tickets</th>
+ <th>class</th>
+
+ <th>Train-id</th>
+
+ <th>Cost</th>
+
+ 
+ </tr>
+<tr>
+
+
+    
+       <td><%= message.tickid %></td>
+       <td><%= message.seats %></td>
+     <td ><%= message.class %></td>
+   <td><%= message.train_id %></td>
+   <td><%= message.cost %></td>
+   <td>
+    <a href="/me/<%= message.tickid %>">cancel ticket </a>
+   </td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  
+    <td></td>
+    <td></td>
+ 
+
+
+ </table>
+
+ <% }    %> 
+
+ <%   if(typeof message == "undefined" ) { %>
+  <h1>There is no booking of yours</h1>
+  <% } %>
+
+ </body>
+
+</html>
+
+  

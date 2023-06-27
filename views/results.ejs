@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+ <title>Table layout</title>
+
+ <link rel="stylesheet" href="assets\main.css">
+<style>
+    h1{ 
+      text-align: center;
+      color: blue;
+    }
+    .filter{
+ position: absolute;
+ left: 0;
+ top: 0;
+ bottom: 0;
+ right: 0;
+ z-index: 1;
+ background: rgb(233,76,161);
+background: -moz-linear-gradient(90deg, rgba(233,76,161,1) 0%, rgba(199,74,233,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(233,76,161,1) 0%, rgba(199,74,233,1) 100%);
+background: linear-gradient(90deg, rgba(233,76,161,1) 0%, rgba(199,74,233,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e94ca1",endColorstr="#c74ae9",GradientType=1); 
+opacity: .7;
+}
+</style>
+</head>
+
+<body>
+
+
+  <div class="filter">
+  
+ </div>
+
+ <table >
+
+  
+
+    <h1 > <%= obj.print2[0].startlocation %> To <%= obj.print2[0].endlocation %> <%= obj.print2[0].train_name %> train schedule </h1>   
+ <tr>
+
+ <th>Station</th>
+
+ <th>Duration from start</th>
+
+ <th>Platform</th>
+
+ <th>Halt </th>
+
+ 
+ </tr>
+ <tr>
+ <% for(var i=0;i<obj.print.length;i++){ %>
+    <% for(var p=0;p<obj.print3.length;p++){ %> 
+       <% if((obj.print3[p].stop_id)==(obj.print[i].stop_id)){ %>
+           <td><%= obj.print3[p].route %></td>
+       <% } %>
+       <% } %>
+        <td><%=obj.print[i].duration%></td>
+        
+       
+        <td><%=obj.print[i].platform%></td>
+       
+        <td>2min</td>
+      
+        </tr>
+ <%} %>
+ 
+ </table>
+
+
+ </body>
+
+</html>

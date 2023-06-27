@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="assets\app2.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   <style>
+    body{
+    background-image: url("https://images.unsplash.com/photo-1474487548417-781cb71495f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=984&q=80"); 
+    background-size: 100% 100%;
+    }
+    .me{ 
+      width : 300px;
+      height: 50px;
+    }
+  .index container animated zoomIn{ 
+
+  }
+   </style>
+   <title>Document</title>
+</head>
+<body> 
+  <form action="/ticket" method="post">
+  <div class="index container animated zoomIn">
+
+    <div class="form contactform">
+      <div id="page1">
+        <h1>Book Your Train Ticket</h1>
+        <div class="index row">
+  
+         
+       
+     
+        <div class="wrapper">
+          <div class="search-input">
+            <a href="" target="_blank" hidden></a>
+            <input type="text" name="from" class= "from "placeholder="From">
+            <div class="autocom-box">
+              <!-- here list are inserted from javascript -->
+            </div>
+            <div class="icon"><i class="fas fa-search"></i></div>
+          </div>
+        </div> 
+
+
+
+        
+      
+        <div class="wrapper">
+          <div class="search-input">
+            <a href="" target="_blank" hidden></a>
+            <input type="text" name = "to" class="to" placeholder="To">
+            <div class="autocom-box">
+              <!-- here list are inserted from javascript -->
+            </div>
+            <div class="icon"><i class="fas fa-search"></i></div>
+          </div>
+        </div>
+ 
+       
+         <div class="field col-sm-6 col-centered">
+          
+          <input id="datepicker" name="date" type="date" placeholder="Date" /> 
+           <!-- <input class="me" type="date" class="date-picker" name="DOB" placeholder="Date of Birth"> -->
+         </div>
+          
+         <div class="field col-sm-6 col-centered ">
+          <input type="submit" id= "ddbh" class="btn btn-outline-primary" value="Find Trains">
+        </div>
+      </div>
+    </div> 
+        </form>
+      
+         
+       
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script  src="assets\app4.js"></script>
+   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script> 
+    flatpickr("input[id=datepicker]", {});
+</script>
+</body>
+</html>
+

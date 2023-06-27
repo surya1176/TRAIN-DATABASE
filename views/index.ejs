@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="box">
+        <div class="design"> 
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="form"> 
+            <h2>User Login</h2>
+            <form action="/" method="post"> 
+                <input type="text" name="username"  class="input-field" placeholder="Username" />
+                <input type="password" name="password" class="input-field" placeholder="Password"/> 
+                <%   if(typeof message != "undefined" && message) { %>
+
+                    <div class="mt-5 mb-3">
+            
+                      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            
+                        <strong><%=  message  %></strong>
+            
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            
+                      </div>
+            
+                    </div> 
+            
+                  <% }    %>
+                <input type="submit" class="btn btn-danger" value="Login ">
+            </form>
+            <a href="/auth/google" class="btn btn-danger"><span class="fa fa-google"></span> Login with Google</a>
+           <p class = "reg">dont have an account? <a href="register.html">Register now</a></p>
+ 
+        </div>
+    </section>
+</body>
+</html>
